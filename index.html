@@ -6,9 +6,25 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="style.css">
    <link rel="shortcut icon" href="\images\favicon.png">
+   <script src="js/main.js"></script>
   </head>
 
   <body>
+    <nav id="homebar">
+      <h1>Sudoku Solver</h1>
+      <p>by williaeki</p>
+    </nav>
+
+    <div id="css-input-table">
+      <h2>Input Values:</h2>
+      <p style="font-size: 16px;">[leave empty for unknown cells]</p><br>
+      <!--boxes, rows, columns, and cells-->
+      <div id="table"><script>userTable()</script></div>
+      <form>
+        <button type="button" onclick="solve()" style="margin-top: 10px; font-family: Consolas, monospace; font-size: 24px; text-transform: uppercase;">Solve</input>
+      </form>
   </body>
+
+
 
 </html>
